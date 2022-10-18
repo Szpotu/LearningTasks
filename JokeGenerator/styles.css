@@ -1,0 +1,94 @@
+*{
+    border:none;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    padding:0;
+    height: auto;
+    background:linear-gradient(90deg,rgb(200,30,80),rgb(200,20,200));
+    margin:0;
+    font-size: 62.5%;
+
+}
+/*.container - title*/
+.container{
+    text-align: center;
+
+}
+#title,.welcome-p{
+    font-family: 'Pacifico', cursive;
+}
+#title{
+    font-size:3rem;
+}
+.welcome-p{
+    font-size: 1.5rem;
+}
+.welcome-p:nth-child(3){
+    font-size: 2rem;
+}
+/*Section - Joke-section*/
+.joke-section{
+display:grid;
+grid-template-columns: .3fr .6fr .3fr;
+}
+.output-window{
+    background-color: rgba(220,220,200,.6);
+    height: 100%;
+}
+
+/*Buttons*/
+.btn-container{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+    padding:.4rem;
+    gap: 20px;
+}
+.btn{
+    padding:1rem;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color:aliceblue;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: aliceblue;
+    color:black;
+}
+.try-me-button{
+    background-color: blueviolet;
+}
+.share-me-button{
+    background-color: rgb(20,40,200);
+}
+.reset-me-button{
+    background-color: rgb(200,30,30);
+}
+.category-button{
+    background-color: rgb(20,150,100);
+    display:none;
+}
+#keyword{
+    cursor:text;
+}
+.output-window{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+

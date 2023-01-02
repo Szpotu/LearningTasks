@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.wiki-container {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.wiki-container .title {
+  font-weight: 300;
+}
+.wiki-container .title:before {
+  content: "";
+  background-color: black;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 80px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.wiki-container .title:hover:before {
+  opacity: 1;
+  width: 50%;
+}
+.wiki-container .form input {
+  padding: 5px 10px;
+  width: 600px;
+  transition: all 0.6s ease-in-out;
+}
+.wiki-container .form input:hover, .wiki-container .form input:focus, .wiki-container .form input:active {
+  border-radius: 10px;
+}
+.wiki-container #btn-pack {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.wiki-container #btn-pack .btn {
+  padding: 5px 20px;
+}
+
+.results {
+  width: 50vw;
+  height: 50vh;
+}
+
+.result-record {
+  padding: 20px;
+  font-style: Arial, sans-serif;
+}
+.result-record .js-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+  font-style: Arial, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.result-record .js-link:hover {
+  text-decoration: underline;
+}
+.result-record .result-link {
+  color: green;
+  font-size: 13px;
+}
+.result-record .snippet {
+  font-size: 14px;
+  color: #030303;
+  font-style: Arial, sans-serif;
+  line-height: 1.3;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
